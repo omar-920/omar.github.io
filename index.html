@@ -261,9 +261,9 @@
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-whatsapp" id="submit-to-whatsapp">
-                        <input type="text" name="Name" placeholder=" Insert Your Name Here..." required>
-                        <input type="email" name="Email" placeholder=" Insert Your Email Here..." required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="text" name="name" placeholder=" Insert Your Name Here..." required>
+                        <input type="email" name="email" placeholder=" Insert Your Email Here..." required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn-2">Submit</button>
                     </form>
                     <span id="msg"></span>
@@ -333,9 +333,9 @@
 
             // قم بجمع بيانات النموذج
             const formData = new FormData(form)
-            const name = formData.get('Name')
-            const email = formData.get('Email')
-            const message = formData.get('Message')
+            const name = formData.get('name')
+            const email = formData.get('email')
+            const message = formData.get('message')
 
             // قم ببناء رابط الرسالة على WhatsApp
             const whatsappMessage = `اسم: ${name}%0Aبريد إلكتروني: ${email}%0Aرسالة: ${message}`
