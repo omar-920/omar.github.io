@@ -338,7 +338,7 @@
             const message = formData.get('message')
 
             // قم ببناء رابط الرسالة على WhatsApp
-            const whatsappMessage = `name: ${name}email: ${email}message: ${message}`
+            const whatsappMessage = `اسم: ${name}بريد إلكتروني: ${email}رسالة: ${message}`
             const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappMessage)}&phone=+201062429970`;
 
             // قم بفتح نافذة جديدة لرابط واتساب
